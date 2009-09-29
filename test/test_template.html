@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Controler - Unit Tests</title>    
+    <script src="../jquery.js" type="text/javascript"></script>
+    <script src="../template.js" type="text/javascript"></script>
+    
+	<!--<script src="../mens.ContentControler.js" type="text/javascript"></script>
+    <script src="../mens.DAI.js" type="text/javascript"></script>
+    <script src="../mens.Templates.js" type="text/javascript"></script>-->
+    
+    <script src="testrunner.js" type="text/javascript"></script>
+	<script src="test_template.js" type="text/javascript"></script>
+    <link media="screen" href="testsuite.css" type="text/css" rel="stylesheet"/>    
+</head>
+<body>
+    <h1>Templates - Unit Tests</h1>
+    <h2 id="banner"></h2>
+    <ol id="tests"></ol>
+    <div id="results"></div>
+    <div id="main"></div>
+    
+    
+<script type="text/html" id="user_tmpl" style="display:none">
+	<ul>
+	<% for( var i = 0; i < users.length; i++ ){ %>
+    	<li><a href="<%=users[i].url%>"><%=users[i].name%></a></li>
+  	<% } %>
+  	</ul>
+</script>
+
+<script type="text/html" id="user_tmpl_jquery" style="display:none">
+	<ul>
+	<% jQuery( "h1, h2" ).each( function( i ){ %>
+    	<li><%= users[i].name %></li>
+  	<% }) %>
+  	</ul>
+</script>
+</body>
+</html>

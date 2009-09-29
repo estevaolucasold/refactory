@@ -1,0 +1,14 @@
+- Opção de cache para as requisições
+- Tirar o bind data para o callback dos AJAXs
+- Tira os endereços dos AJAX do DAI
+
+- Colocar callbacks 
+
+- Tirar a obrigatoriedade do listWrapper
+- Tirar a classe .listWrapper
+
+- APP para colocar determinados arquivos um único.
+- Utilizar jquery.require para carregar os JS. Fazendo com que não seja necessário incluir os arquivos no <head>
+
+- Separa o testrunner e coloca-lo em tools
+- OptmiPNG
